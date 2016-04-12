@@ -9931,82 +9931,7 @@ function(e) {
         })
     }
     function b() {
-        var t, i = 44.5403, n = -78.5463, o = e("#map"), s = o.get(0), a = [{
-            featureType: "landscape",
-            stylers: [{
-                saturation: -100
-            }, {
-                lightness: 65
-            }, {
-                visibility: "on"
-            }]
-        }, {
-            featureType: "poi",
-            stylers: [{
-                saturation: -100
-            }, {
-                lightness: 51
-            }, {
-                visibility: "simplified"
-            }]
-        }, {
-            featureType: "road.highway",
-            stylers: [{
-                saturation: -100
-            }, {
-                visibility: "simplified"
-            }]
-        }, {
-            featureType: "road.arterial",
-            stylers: [{
-                saturation: -100
-            }, {
-                lightness: 30
-            }, {
-                visibility: "on"
-            }]
-        }, {
-            featureType: "road.local",
-            stylers: [{
-                saturation: -100
-            }, {
-                lightness: 40
-            }, {
-                visibility: "on"
-            }]
-        }, {
-            featureType: "transit",
-            stylers: [{
-                saturation: -100
-            }, {
-                visibility: "simplified"
-            }]
-        }, {
-            featureType: "administrative.province",
-            stylers: [{
-                visibility: "off"
-            }]
-        }, {
-            featureType: "water",
-            elementType: "labels",
-            stylers: [{
-                visibility: "on"
-            }, {
-                lightness: -25
-            }, {
-                saturation: -100
-            }]
-        }, {
-            featureType: "water",
-            elementType: "geometry",
-            stylers: [{
-                hue: "#ffff00"
-            }, {
-                lightness: -25
-            }, {
-                saturation: -97
-            }]
-        }];
+        var t, i = 44.5403, n = -78.5463, o = e("#map"), s = o.get(0), a = [{		"featureType":"landscape",		"stylers":[			{				"hue":"#FFA800"			},			{				"saturation":0			},			{				"lightness":0			},			{				"gamma":1			}		]	},	{		"featureType":"road.highway",		"stylers":[			{				"hue":"#53FF00"			},			{				"saturation":-73			},			{				"lightness":40			},			{				"gamma":1			}		]	},	{		"featureType":"road.arterial",		"stylers":[			{				"hue":"#FBFF00"			},			{				"saturation":0			},			{				"lightness":0			},			{				"gamma":1			}		]	},	{		"featureType":"road.local",		"stylers":[			{				"hue":"#00FFFD"			},			{				"saturation":0			},			{				"lightness":30			},			{				"gamma":1			}		]	},	{		"featureType":"water",		"stylers":[			{				"hue":"#00BFFF"			},			{				"saturation":6			},			{				"lightness":8			},			{				"gamma":1			}		]	},	{		"featureType":"poi",		"stylers":[			{				"hue":"#679714"			},			{				"saturation":33.4			},			{				"lightness":-25.4			},			{				"gamma":1			}		]	}];
         e("html").hasClass("theme-skin-dark") && (a = [{
             stylers: [{
                 hue: "#ff1a00"
@@ -10030,7 +9955,7 @@ function(e) {
         o.data("longitude") && (n = o.data("longitude")),
         t = new google.maps.LatLng(i,n);
         var r = {
-            zoom: 14,
+            zoom: 11,
             center: t,
             scrollwheel: !0,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
